@@ -31,6 +31,14 @@ cd ~/.vim/pack/flake8/start/
 git clone https://github.com/nvie/vim-flake8.git
 sudo apt-get install flake8
 
+# Install hyperfine
+wget https://github.com/sharkdp/hyperfine/releases/download/v1.9.0/hyperfine_1.9.0_amd64.deb
+sudo dpkg -i hyperfine_1.9.0_amd64.deb
+
+# Install Asciinema + svg-term-cli
+sudo apt-get install asciinema
+sudo npm install -g svg-term-cli
+
 ln -s $DOTFILES_ROOT/zshrc ~/.zshrc
 ln -s $DOTFILES_ROOT/vimrc ~/.vimrc
 ln -s $DOTFILES_ROOT/zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
