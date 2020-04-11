@@ -11,7 +11,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'dracula/vim', { 'name': 'dracula' }
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
-"Plugin 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plugin 'scrooloose/nerdtree'
+Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'nvie/vim-flake8'
 
 "
 " CODE STUFF
@@ -228,3 +230,19 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+
+"
+" NERDTree
+"
+nmap <C-n> :NERDTreeToggle<CR>
+
+"
+" Git-Fugitive
+"
+nmap <C-g> :Gblame<CR>
+
+"
+" vim-markdown-preview
+"
+let vim_markdown_preview_github=1
