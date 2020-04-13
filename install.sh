@@ -23,6 +23,9 @@ sudo dpkg -i fd-musl_7.3.0_amd64.deb
 curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgrep_11.0.2_amd64.deb
 sudo dpkg -i ripgrep_11.0.2_amd64.deb
 
+# Install dircolors
+cp dircolors $HOME/.dircolors
+
 # Install Flake8 Support
 mkdir -p ~/.config
 cp flake8 ~/.config/flake8
