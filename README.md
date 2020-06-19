@@ -43,6 +43,9 @@ rg PATTERN
 
 ## Install COC.NVIM
 ```
+sudo su
+curl -sL install-node.now.sh/lts | bash
+
 :call coc#util#install()
 ```
 
